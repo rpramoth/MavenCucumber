@@ -8,7 +8,7 @@ public class UberBookImpl {
 
 	@Given("user wants to select the car {string} for ride")
 	public void user_wants_to_select_the_car_for_ride(String carType) {
-	
+	System.out.println("User wants to ride in "+carType);
 		System.out.println("Step 1");
 	
 	}

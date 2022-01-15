@@ -1,0 +1,11 @@
+mvn test -DCucumber.filter.tags="@Smoke" -- to run from command window
+
+Regular Expressions
+------------------------
+
+\d --> digit
+\w --> word
++ --> one or more
+* --> zero or more
+{5}--> 5 characters should be there
+? --> zero or one
