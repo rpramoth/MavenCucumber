@@ -31,7 +31,7 @@ public class Product {
 		
 		List<String> productList = new ArrayList<String>();
 		productList.add("Macbook Pro");
-		productList.add("IPhone");
+		productList.add("iPhone");
 		return productList;
 	}
 	

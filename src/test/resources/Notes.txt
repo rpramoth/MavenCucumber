@@ -9,3 +9,29 @@ Regular Expressions
 * --> zero or more
 {5}--> 5 characters should be there
 ? --> zero or one
+
+Tags --- Refer UberRunenr.java
+tags= "@Regression or @Smoke", 
+tags="@Regression and @Smoke", tags="not @Prod"
+tags= "@All"  -- feature level,
+tags="not @Prod"
+
+
+Background -- Refer AmazonOrderRunner.java
+when more scenarios are having repetitive steps, then a keyword called Background can be
+user and the repeated steps can be defined over there.
+
+Hooks
+- Not a part of feature file
+- can be defined in step definition file
+Set up and teardown
+@Before -- will be executed before each scenario
+@Before(order =1) -- 1st executed  // for Before, order will be in ascending, for after it will be in descending 
+@Before(order =2) -- 2nd executed
+ 
+@After(order =1)  -- 2nd executed 
+@After(order =2)  -- 1st executed
+@After -- will be executed after each scenario
+@BeforeStep -- will be executed before each step of the scenario
+@AfterStep -- will be executed after each step of the scenario
+@Before(@Smoke)  -- Tags inside Hooks
