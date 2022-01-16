@@ -10,10 +10,13 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(		
 		features = {"src\\test\\resources\\features\\Uber.feature"},
 		glue = {"stepDefinitions"},
-		plugin = {"pretty"},
+		plugin = {"pretty","json:target/MyReport/report.json"},
 		//		tags= "@Regression or @Smoke", tags="@Regression and @Smoke", tags="not @Prod"
 		tags= "@All",
-		monochrome = true
+		monochrome = true,
+		dryRun = false // this will not run any of the steps if the step is not defined for a step 
+//		publish=true // publish ur report to cucumber cloud
+//		strict = true-- this is deprecated
 		)
 
 

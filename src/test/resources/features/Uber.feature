@@ -8,6 +8,7 @@ When user selects "Sedan" and pickup point "Bangalore" and drop point "Chennai"
 Then driver starts the journey
 And driver ends the journey
 Then the user pays 1000 rupees
+Then the ride is considered as completed
 
 @Regression @Smoke
 Scenario: Booking cab SUV car

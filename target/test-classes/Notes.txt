@@ -22,8 +22,10 @@ when more scenarios are having repetitive steps, then a keyword called Backgroun
 user and the repeated steps can be defined over there.
 
 Hooks
+---------------------------------
 - Not a part of feature file
 - can be defined in step definition file
+- to define the hooks package in glue of Runner file
 Set up and teardown
 @Before -- will be executed before each scenario
 @Before(order =1) -- 1st executed  // for Before, order will be in ascending, for after it will be in descending 
@@ -35,3 +37,13 @@ Set up and teardown
 @BeforeStep -- will be executed before each step of the scenario
 @AfterStep -- will be executed after each step of the scenario
 @Before(@Smoke)  -- Tags inside Hooks
+
+Reports
+----------------------------
+src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true)
+
+plugin = {"pretty","json:target/MyReport/report.json"},
+

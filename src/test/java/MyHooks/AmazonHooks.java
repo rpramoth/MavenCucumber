@@ -40,19 +40,19 @@ public class AmazonHooks {
 //		System.out.println("Close Browser");
 //	}
 //	
-	@After("@Smoke")
-	public void tearDown_close() {
-		System.out.println("After method for smoke Close Browser");
-	}
-	
-	@BeforeStep
-	public void takeScreenshot() {
-		System.out.println("Take Screenshot");
-	}
-	
-	
-	@AfterStep
-	public void getScreenshot() {
-		System.out.println("Get Screenshot");
-	}
+//	@After("@Smoke")
+//	public void tearDown_close() {
+//		System.out.println("After method for smoke Close Browser");
+//	}
+//	
+//	@BeforeStep
+//	public void takeScreenshot() {
+//		System.out.println("Take Screenshot");
+//	}
+//	
+//	
+//	@AfterStep
+//	public void getScreenshot() {
+//		System.out.println("Get Screenshot");
+//	}
 }
